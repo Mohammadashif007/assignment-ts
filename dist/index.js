@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-function formateString(input, toUpper) {
+function formatString(input, toUpper) {
     if (toUpper === true) {
         return input.toUpperCase();
     }
@@ -19,9 +19,9 @@ function formateString(input, toUpper) {
         return input.toUpperCase();
     }
 }
-console.log(formateString("Hello"));
-console.log(formateString("Hello", true));
-console.log(formateString("Hello", false));
+console.log(formatString("Hello"));
+console.log(formatString("Hello", true));
+console.log(formatString("Hello", false));
 function filterByRating(items) {
     const filteredItem = items.filter((item) => item.rating >= 4);
     return filteredItem;
@@ -32,11 +32,11 @@ const result = filterByRating([
     { title: "Book C", rating: 5.0 },
 ]);
 console.log(result);
-function concatenationArrays(...array) {
+function concatenateArrays(...array) {
     return [].concat(...array);
 }
-console.log(concatenationArrays(["a", "b"], ["c"]));
-console.log(concatenationArrays([1, 2], [3, 4], [5]));
+console.log(concatenateArrays(["a", "b"], ["c"]));
+console.log(concatenateArrays([1, 2], [3, 4], [5]));
 class Vehicle {
     constructor(make, year) {
         this._make = make;
@@ -69,7 +69,7 @@ function processValue(value) {
 }
 console.log(processValue("Hello"));
 console.log(processValue(10));
-function mostExpensiveProduct(products) {
+function getMostExpensiveProduct(products) {
     if (!products.length) {
         return null;
     }
@@ -82,7 +82,7 @@ const products = [
     { name: "Notebook", price: 25 },
     { name: "Bag", price: 50 },
 ];
-console.log(mostExpensiveProduct(products));
+console.log(getMostExpensiveProduct(products));
 var Day;
 (function (Day) {
     Day[Day["Monday"] = 0] = "Monday";

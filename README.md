@@ -1,6 +1,6 @@
 ## 1. What are some differences between interfaces and types in TypeScript?
 
-TypeScript allows us to define the **shape of data** and create **custom types**. To do this, we can use either `interfaces` or `types`. While both serve similar purposes, there are some key differences between them:
+TypeScript allows us to define the shape of data and create custom types. To do this, we can use either `interfaces` or `types`. There are some key differences between them:
 
 ### Differences Between `type` and `interface`
 
@@ -47,7 +47,7 @@ type Pair = [number, number];
 type Callback = () => void;
 ```
 
--`interface` can **only** represent object structures:
+-`interface` can only represent object structures:
 
 ```ts
 interface Person {
@@ -60,7 +60,7 @@ interface Person {
 
 ## 2. What is the use of the `keyof` keyword in TypeScript?
 
-The `keyof` keyword in TypeScript is used to **extract the keys of an object type** and create a **string literal union type**.
+The `keyof` keyword in TypeScript is used to extract the keys of an object type and create a string literal union type.
 
 ### Example
 
